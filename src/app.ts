@@ -1,11 +1,5 @@
 import express, { Express } from "express";
 import cors from "cors";
-
-// Routes
-import { router as RouterV1 } from "./Routes/v1";
-
-import { JestRoute } from "./Routes/TestRouter";
-
 export class App {
   private app: Express;
   private PORT: number;
@@ -23,8 +17,7 @@ export class App {
   }
 
   private routes() {
-    this.app.use("/", RouterV1);
-    this.app.use("/jest", JestRoute);
+    this.app.use("/");
   }
 
   public returnAppforTest() {

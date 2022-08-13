@@ -1,6 +1,6 @@
 {
   "name": "api-default-start-ria",
-  "version": "0.0.1",
+  "version": "1.0.0",
   "main": "index.js",
   "license": "MIT",
   "dependencies": {
@@ -31,6 +31,7 @@
   },
   "scripts": {
     "test": "jest",
-    "dev": "ts-node-dev ./src/index.ts"
+    "dev": "ts-node-dev ./src/index.ts",
+    "build": "tsc"
   }
 }
